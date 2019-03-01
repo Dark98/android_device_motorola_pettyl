@@ -31,6 +31,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8917_mot_pettyl_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_mot_pettyl_camera.xml \
     $(LOCAL_PATH)/configs/camera/s5k3l8_jetertr_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_jetertr_chromatix.xml
 
+# IRQ balance
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
+
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/ft5x06_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/ft5x06_ts.kl \
