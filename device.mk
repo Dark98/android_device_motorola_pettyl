@@ -13,6 +13,9 @@ $(call inherit-product-if-exists, vendor/motorola/pettyl/pettyl-vendor.mk)
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
