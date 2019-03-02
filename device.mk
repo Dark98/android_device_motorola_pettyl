@@ -84,6 +84,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/msm8917_mot_pettyl_camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/msm8917_mot_pettyl_camera.xml \
     $(LOCAL_PATH)/configs/camera/s5k3l8_jetertr_chromatix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/s5k3l8_jetertr_chromatix.xml
 
+# CNE
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+
 # Display
 PRODUCT_PACKAGES += \
     gralloc.msm8937 \
@@ -181,6 +185,15 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service-qti
+
+# QMI
+PRODUCT_PACKAGES += \
+    libjson
+
+# RIL
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libxml2
 
 # Ramdisk
 PRODUCT_PACKAGES += \
