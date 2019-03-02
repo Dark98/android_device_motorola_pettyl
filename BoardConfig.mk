@@ -70,6 +70,8 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_CONFIG := pettyl_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
+# Media
+TARGET_USES_MEDIA_EXTENSIONS := true
 
 # Partitions
 #BOARD_FLASH_BLOCK_SIZE               := 131072		# (BOARD_KERNEL_PAGESIZE * 64)
